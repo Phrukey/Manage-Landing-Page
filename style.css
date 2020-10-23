@@ -20,12 +20,20 @@ nav {
   position: absolute;
   top:100%;
   width: 100%;
+  transform: scale(1,0);
 }
 nav ul {
   list-style: none;
   display: inline-block;
   width: 100%;
   background: blanchedalmond;
+}
+nav li {
+  margin: 5px 0 5px 20px;
+  text-transform: uppercase;
+}
+.navbar-toggle:checked ~ nav {
+  transform: scale(1,1);
 }
 label {
  
@@ -39,7 +47,8 @@ label div {
 }
 .hamburger  {
   position: absolute;
+  z-index: 8;
 }
-/* .close {
-  display: none;
-} */
+.close {
+  visibility: hidden;
+}
