@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: cadetblue;
+  position: relative;
+}
+header img {
+  padding: 30px;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+nav {
+  position: absolute;
+  top:100%;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  background: blanchedalmond;
+}
+label {
+ 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid red;
+}
+label div {
+  position: relative;
+}
+.hamburger  {
+  position: absolute;
+}
+/* .close {
+  display: none;
+} */
