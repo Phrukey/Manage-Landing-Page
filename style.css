@@ -7,7 +7,8 @@ header {
   position: fixed;
   top: 0px;
   width: 100%;
-  /* border: 1px solid red; */
+  /* background: hsl(13, 100%, 96%); */
+  border: 1px solid red;
 }
 @font-face{
   font-family: BVLight;
@@ -21,7 +22,10 @@ body {
   font-family: BVLight;
   font-size: 10px;
   color: hsl(227, 12%, 61%);
+  text-align: center;
 }
+h2 {font-size: 2rem;}
+h3{font-size: 1.2rem;}
 .heading{
   color: hsl(228, 39%, 23%);
   font-family: BVBold;
@@ -30,7 +34,7 @@ body {
   position: relative;
 }
 header img {
-  padding: 40px 15px 15px 15px;
+  padding: 40px 15px 15px 0;
 }
 .navbar-toggle {
   position: absolute;
@@ -55,6 +59,7 @@ nav li {
   margin: 5px 0 5px 20px;
   text-transform: uppercase;
 }
+
 .navbar-toggle:checked ~ nav {
   transform: scale(1,1);
 }
@@ -120,3 +125,42 @@ height: 90%;
   font-family: BVBold;
   font-size: 1.2rem;
 }
+.features {
+  margin-top: 50px ;
+  padding: 15px;
+}
+
+.features p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.feature{
+  margin-right: -14px;
+}
+.feature-heading {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  background: hsl(0, 0%, 98%);
+}
+.feature-heading span {
+  background: hsl(12, 88%, 59%);
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: hsl(13, 100%, 96%);
+  font-family: BVBold;
+  font-size: 1.2rem;
+}
+.feature p {
+  text-align: left;
+  padding:0 5px;
+}
+.testimonial {
+  width: 80%;
+  margin: 150px auto 0 auto;
+  background: hsl(0, 0%, 98%);
+}
+.testimonial p {
+  font-size: 1.2rem;
+}
+.testimonial img { margin-top: -100px;}
