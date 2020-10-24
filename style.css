@@ -9,6 +9,23 @@ header {
   width: 100%;
   /* border: 1px solid red; */
 }
+@font-face{
+  font-family: BVLight;
+  src: url(/Be_Vietnam/BeVietnam-Light.ttf);
+}
+@font-face {
+  font-family: BVBold;
+  src: url(/Be_Vietnam/BeVietnam-ExtraBold.ttf);
+}
+body {
+  font-family: BVLight;
+  font-size: 10px;
+  color: hsl(227, 12%, 61%);
+}
+.heading{
+  color: hsl(228, 39%, 23%);
+  font-family: BVBold;
+}
 .header {
   position: relative;
 }
@@ -81,4 +98,25 @@ main{width: 100%;}
 width: 90%;  
 height: 90%;
 /* border: 1px solid red; */
+}
+.intro-details {
+  padding: 20px;
+  text-align: center;
+}
+.intro-details h1  {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+.intro-details p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.intro a {
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  background: hsl(12, 88%, 59%);
+  color: hsl(13, 100%, 96%);
+  font-family: BVBold;
+  font-size: 1.2rem;
 }
