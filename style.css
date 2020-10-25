@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  /* background: hsl(13, 100%, 96%); */
-  border: 1px solid red;
-}
 @font-face{
   font-family: BVLight;
   src: url(/Be_Vietnam/BeVietnam-Light.ttf);
@@ -18,14 +11,28 @@ header {
   font-family: BVBold;
   src: url(/Be_Vietnam/BeVietnam-ExtraBold.ttf);
 }
+@font-face {
+  font-family: BVSBold;
+  src: url(/Be_Vietnam/BeVietnam-SemiBold.ttf);
+}
 body {
   font-family: BVLight;
   font-size: 10px;
   color: hsl(227, 12%, 61%);
   text-align: center;
+  
 }
 h2 {font-size: 2rem;}
 h3{font-size: 1.2rem;}
+a {
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 25px;
+  background: hsl(12, 88%, 59%);
+  color: hsl(13, 100%, 96%);
+  font-family: BVBold;
+  font-size: 1rem;
+}
 .heading{
   color: hsl(228, 39%, 23%);
   font-family: BVBold;
@@ -34,7 +41,7 @@ h3{font-size: 1.2rem;}
   position: relative;
 }
 header img {
-  padding: 40px 15px 15px 0;
+  padding: 30px 0;
 }
 .navbar-toggle {
   position: absolute;
@@ -100,8 +107,8 @@ main{width: 100%;}
   /* border: 1px solid red; */
 }
 .intro-image img {
-width: 90%;  
-height: 90%;
+width: 300px;  
+height: 300px;
 /* border: 1px solid red; */
 }
 .intro-details {
@@ -116,15 +123,7 @@ height: 90%;
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
-.intro a {
-  text-decoration: none;
-  padding: 15px 25px;
-  border-radius: 25px;
-  background: hsl(12, 88%, 59%);
-  color: hsl(13, 100%, 96%);
-  font-family: BVBold;
-  font-size: 1.2rem;
-}
+
 .features {
   margin-top: 50px ;
   padding: 15px;
@@ -157,6 +156,7 @@ height: 90%;
 }
 .testimonials {
   width: 100%;
+  padding-bottom: 50px;
   overflow: hidden;
 }
 .testimonial-slide {
@@ -169,7 +169,7 @@ height: 90%;
   margin-top: 100px;
   background: hsl(0, 0%, 98%);
   padding: 10px 30px 50px 30px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   transition: 0.4s;
 }
 .testimonial h3 {margin: 30px 0px;}
@@ -186,12 +186,11 @@ input[name="r"] {
   position: absolute;
 }
 .sliderNavigation {
-  width: 200px;
+  width: 130px;
   height: 30px;
   display: flex;
-  border: 1px solid red;
   column-gap: 9px;
-  margin: 0 auto;
+  margin: 10px auto 40px auto;
 }
 .testimonials .sliderNavigation label{
   width: 15px;
@@ -202,8 +201,68 @@ input[name="r"] {
   cursor: pointer;
 }
 .dot:hover { background: hsl(12, 88%, 59%);}
-#r1:checked > .dot { background: hsl(12, 88%, 59%);}
+#r1:checked ~ .sliderNavigation + .dot { background: hsl(12, 88%, 59%);}
 #r1:checked ~ .t1 {margin-left: 0;}
 #r2:checked ~ .t1 { margin-left: -25%;}
 #r3:checked ~ .t1 { margin-left: -50%;}
-#r4:checked ~ .t1 { margin-left: -75%;} 
+#r4:checked ~ .t1 { margin-left: -75%;}
+.banner {
+  padding: 50px 15px;
+  background: hsl(12, 88%, 59%);
+  color: #ffffff;
+} 
+.banner h2 {
+  margin-bottom: 50px;
+}
+.banner a {
+  color: hsl(12, 88%, 59%);
+  background: #ffffff;
+}
+footer {
+  background: hsl(233, 12%, 13%);
+  padding:  50px 15px;
+  border: 5px solid black;
+}
+footer .subscribe input {
+  padding: 10px 5px 15px 15px;
+  width: 80%;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-family: BVLight;
+  outline: none;
+}
+footer button {
+  padding: 20px;
+  width: 15%;
+  color: #ffffff;
+  background: hsl(12, 88%, 59%);
+  border-radius: 25px;
+  border: transparent;
+  cursor: pointer;
+}
+footer .footerNavigation {
+  padding: 50px 30px;
+}
+footer .footerNavigation ul {
+  list-style: none;
+  columns: 2;
+  font-size: 1.1rem;
+  font-family: BVSBold;
+  color: #ffffff;
+}
+footer .footerNavigation ul li {
+  margin-bottom: 15px;
+}
+.social-media img {
+  width: 3rem;
+  margin-right: 30px;
+}
+.social-media img:nth-of-type(5) {
+  margin-right: 0;
+}
+.social-media ~ img {
+  margin: 3rem;
+}
+footer p {
+  font-size: 1rem;
+}
