@@ -40,7 +40,7 @@ a {
 .header {
   position: relative;
 }
-header img {
+header .logo {
   padding: 30px 0;
 }
 .navbar-toggle {
@@ -52,10 +52,13 @@ header img {
 nav {
   position: absolute;
   top:100%;
-  width: 100%;
+  width: 80%;
   transform: scale(1,0);
   transform-origin: top;
+  background: hsl(233, 12%, 13%);
+  border-radius: 5px;
   transition: transform 250ms ease-in;
+  margin: auto;
 }
 nav ul {
   list-style: none;
@@ -65,6 +68,8 @@ nav ul {
 nav li {
   margin: 5px 0 5px 20px;
   text-transform: uppercase;
+  font-size: 1rem;
+  margin: 15px 0;
 }
 
 .navbar-toggle:checked ~ nav {
@@ -96,15 +101,13 @@ header label div {
 main{width: 100%;}
 .intro {
   padding: 0 10px;
-  margin-top: 80px;
   width: 100%;
-  /* border: 1px solid red; */
 }
 .intro-image {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
+ 
 }
 .intro-image img {
 width: 300px;  
