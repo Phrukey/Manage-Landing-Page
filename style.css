@@ -69,12 +69,12 @@ nav li {
 .navbar-toggle:checked ~ label div .close {
   visibility: visible;
 }
-label {
+header label {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-label div {
+header label div {
   position: relative;
 }
 .hamburger  {
@@ -155,12 +155,55 @@ height: 90%;
   text-align: left;
   padding:0 5px;
 }
-.testimonial {
-  width: 80%;
-  margin: 150px auto 0 auto;
-  background: hsl(0, 0%, 98%);
+.testimonials {
+  width: 100%;
+  overflow: hidden;
 }
+.testimonial-slide {
+  width: 400%;
+  display: flex;
+}
+
+.testimonial {
+  width: 25%;
+  margin-top: 100px;
+  background: hsl(0, 0%, 98%);
+  padding: 10px 30px 50px 30px;
+  border: 1px solid red;
+  transition: 0.4s;
+}
+.testimonial h3 {margin: 30px 0px;}
 .testimonial p {
   font-size: 1.2rem;
 }
-.testimonial img { margin-top: -100px;}
+.testimonial img {
+   margin-top: -50px;
+   width: 100px;
+   height: 100px;
+}
+input[name="r"] {
+  visibility: hidden;
+  position: absolute;
+}
+.sliderNavigation {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  border: 1px solid red;
+  column-gap: 9px;
+  margin: 0 auto;
+}
+.testimonials .sliderNavigation label{
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot:hover { background: hsl(12, 88%, 59%);}
+#r1:checked > .dot { background: hsl(12, 88%, 59%);}
+#r1:checked ~ .t1 {margin-left: 0;}
+#r2:checked ~ .t1 { margin-left: -25%;}
+#r3:checked ~ .t1 { margin-left: -50%;}
+#r4:checked ~ .t1 { margin-left: -75%;} 
