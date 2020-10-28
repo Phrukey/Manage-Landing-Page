@@ -19,7 +19,7 @@ body {
   font-family: BVLight;
   font-size: 10px;
   color: hsl(227, 12%, 61%); 
-  background: url(/images/bg-simplify-section-mobile.svg) no-repeat top right ; 
+  background: url(/images/bg-simplify-section-mobile.svg) no-repeat 0 0, hsl(0, 0%, 98%) ; 
 }
 /* .align {  text-align: center;} */
 h2 {font-size: 2rem;}
@@ -248,7 +248,6 @@ input[name="r"] {
 footer {
   background: hsl(233, 12%, 13%);
   padding:  50px 15px;
-  border: 5px solid black;
   text-align: center;
 }
 footer .subscribe input {
@@ -258,6 +257,9 @@ footer .subscribe input {
   font-size: 1.2rem;
   font-family: BVLight;
   outline: none;
+}
+.error {
+  font-family: ;
 }
 footer button {
   padding: 20px;
@@ -296,14 +298,15 @@ footer p {
   font-size: 1rem;
 }
 @media(min-width:750px) {
-  body {
-    background: url(/images/bg-simplify-section-desktop.svg) no-repeat top right/100% ;
-  }
- 
+    body { background: url(/images/bg-simplify-section-desktop.svg) no-repeat top right;
+    min-height: 100%;
+   }
+  .btn:hover {background: hsl(12, 88%, 75%);}
   .header {
     display: grid;
     grid-template-columns: 5% auto 1fr auto 5%;
     margin-bottom: 50px;
+    /* background: url(/images/bg-simplify-section-desktop.svg); */
   }
   .header > img { grid-column: 2/3;}
   nav {
@@ -376,10 +379,11 @@ footer p {
   .testimonial {
     width: 40%;
   }
-  .section-c .sliderNavigation label { visibility: hidden;}
+  /* .section-c .sliderNavigation label { visibility: hidden;} */
   .section-d {
     display: flex;
     justify-content: space-between;
+    background: url(/images/bg-simplify-section-desktop.svg) no-repeat 20% 20%, hsl(12, 88%, 59%);
     align-items: center;
     padding: 50px 5%;
     text-align: left;
