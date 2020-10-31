@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Manage landing page</title>
 </head>
 <body>
-  <header>
+  <header class="head">
     <div class="header">
       <img src="/images/logo.svg" alt="logo" class="logo">
       <input type="checkbox" name="navbar-toggle" id="navbar-toggle" class="navbar-toggle">
@@ -31,8 +31,6 @@
      <a href="#" class="get-started btn">Get Started</a>
       <div class="overlay"></div>
     </div>
-  </header>
-  <main>
     <div class="intro section-a">
       <div class="intro-image">
         <img src="/images/illustration-intro.svg" alt="showcase image">
@@ -44,8 +42,11 @@
         <a href="#" class="intro-button btn"> Get Started</a>
       </div>
     </div>
+  </header>
+  <main>
+   
     <div class="features section-b">
-      <div class="feature-intro align">
+      <div class="feature-intro ">
         <h2 class="heading feature-title">
         What’s different about Manage? 
         </h2>
@@ -54,7 +55,7 @@
           the complexity. Our software is tailor-made for modern digital 
           product teams. </p>
       </div>
-      <div class="features-list align">
+      <div class="features-list">
         <div class="feature">
           <div class="feature-heading">
             <span> 01</span>
@@ -64,7 +65,7 @@
             tracking progress at the milestone level all the way done to the 
             smallest of details. Never lose sight of the bigger picture again.</p>
         </div>
-        <div class="feature align">
+        <div class="feature">
           <div class="feature-heading">
             <span> 02</span>
             <h3 class="heading">Advanced built-in reports</h3>
@@ -149,10 +150,12 @@
 
   <footer>
     <div class="subscribe">
-      <input type="text" name="subscribe" placeholder=" Updates in your inbox…">
-      <label for="subscribe"></label>
-      <button>Go</button>
-      <p class="error"></p>
+      <form >
+        <input type="text" name="subscribe" placeholder=" Updates in your inbox…" class="input">
+        <label for="subscribe"></label>
+        <button>Go</button>
+        <p class="error"></p>
+      </form>
     </div>
     <div class="footerNavigation">
       <ul>
@@ -177,6 +180,6 @@
   </footer>
 
   
-  
+  <script src="app.js"></script>
 </body>
 </html>

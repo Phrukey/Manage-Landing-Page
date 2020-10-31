@@ -19,9 +19,8 @@ body {
   font-family: BVLight;
   font-size: 10px;
   color: hsl(227, 12%, 61%); 
-  background: url(/images/bg-simplify-section-mobile.svg) no-repeat 0 0, hsl(0, 0%, 98%) ; 
+  background:url(/images/bg-simplify-section-mobile.svg) no-repeat top right;
 }
-/* .align {  text-align: center;} */
 h2 {font-size: 2rem;}
 h3{font-size: 1.2rem;}
 .btn {
@@ -195,7 +194,7 @@ main{width: 100%;}
 .testimonial {
   width: 25%;
   margin-top: 100px;
-  background: hsl(0, 0%, 98%);
+  background: hsl(0, 0%, 95%);
   padding: 10px 30px 50px 30px; 
   transition: 0.4s;
 }
@@ -225,6 +224,7 @@ input[name="r"] {
   margin: 5px;
   border-radius: 50%;
   cursor: pointer;
+  border: 1px solid red;
 }
 .dot:hover { background: hsl(12, 88%, 59%);}
 #r1:checked ~ .sliderNavigation + .dot { background: hsl(12, 88%, 59%);}
@@ -250,7 +250,7 @@ footer {
   padding:  50px 15px;
   text-align: center;
 }
-footer .subscribe input {
+footer .subscribe .input {
   padding: 10px 5px 15px 15px;
   width: 80%;
   border-radius: 30px;
@@ -258,8 +258,11 @@ footer .subscribe input {
   font-family: BVLight;
   outline: none;
 }
-.error {
-  font-family: ;
+footer .error {
+  font-family: BVLight;
+  padding: 5px;
+  font-size: 1.1rem;
+  color: hsl(12, 88%, 59%);
 }
 footer button {
   padding: 20px;
@@ -269,6 +272,7 @@ footer button {
   border-radius: 25px;
   border: transparent;
   cursor: pointer;
+  outline: transparent;
 }
 footer .footerNavigation {
   padding: 50px 30px;
@@ -298,15 +302,14 @@ footer p {
   font-size: 1rem;
 }
 @media(min-width:750px) {
-    body { background: url(/images/bg-simplify-section-desktop.svg) no-repeat top right;
-    min-height: 100%;
+  body { 
+    background: url(/images/bg-simplify-section-desktop.svg) no-repeat top  right;   
    }
   .btn:hover {background: hsl(12, 88%, 75%);}
   .header {
     display: grid;
     grid-template-columns: 5% auto 1fr auto 5%;
     margin-bottom: 50px;
-    /* background: url(/images/bg-simplify-section-desktop.svg); */
   }
   .header > img { grid-column: 2/3;}
   nav {
@@ -364,22 +367,13 @@ footer p {
     padding-right: 120px;
   }
   .feature-intro h2 {margin-bottom: 30px;}
+  .feature-heading { background: transparent;}
   .features-list { grid-column: 3/4;}
   .feature p {padding-left: 100px;}
   .section-c {
     margin: 50px 0;
   }
-  .testimonial-slide {
-    width: 150%;
-    overflow-x: scroll;
-    scroll-behavior: auto;
-    column-gap: 20px;
-    padding: 20px 20px;
-  }
-  .testimonial {
-    width: 40%;
-  }
-  /* .section-c .sliderNavigation label { visibility: hidden;} */
+  
   .section-d {
     display: flex;
     justify-content: space-between;
